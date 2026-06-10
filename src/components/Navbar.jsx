@@ -17,7 +17,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const navLinks = ['Home', 'About', 'Experience', 'Skills', 'Projects', 'Contact'];
 
   return (
     <nav 
@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Left Side: Logo/Name */}
         <div className="flex items-center">
           <a href="#" className="text-white text-2xl font-black tracking-tight">
-            Leeshark<span className="text-red-500">.</span>
+            Ajay<span className="text-red-500">.</span>
           </a>
         </div>
 
@@ -53,8 +53,15 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right Side: CTA Button */}
-        <div className="hidden md:block">
+        {/* Right Side: CTA Buttons */}
+        <div className="hidden md:flex items-center gap-3">
+          <a 
+            href="/resume.pdf" 
+            download="Ajay_Gopagoni_Resume.pdf"
+            className="px-6 py-2.5 rounded-full bg-[#ff2a2a] text-white font-semibold hover:bg-red-600 hover:shadow-[0_0_15px_rgba(255,42,42,0.4)] transition-all duration-300"
+          >
+            Resume
+          </a>
           <a 
             href="#contact" 
             className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
@@ -97,7 +104,15 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <div className="pt-4 pb-2">
+          <div className="pt-4 pb-2 flex flex-col gap-3">
+             <a 
+               href="/resume.pdf"
+               download="Ajay_Gopagoni_Resume.pdf"
+               onClick={() => setIsOpen(false)} 
+               className="inline-block px-6 py-3 rounded-full bg-black text-white font-black hover:bg-white hover:text-black transition-colors w-full text-center shadow-lg"
+             >
+               Resume
+             </a>
              <a 
                href="#contact" 
                onClick={() => setIsOpen(false)} 

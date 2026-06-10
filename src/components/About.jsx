@@ -1,8 +1,5 @@
 import React from 'react';
-import stackImage from '../assets/about/image.png';
-import reactImage from '../assets/about/react.png';
-import nodeImage from '../assets/about/node.png';
-import mongoImage from '../assets/about/mongodb.png';
+import stackImage from '../assets/about/proffessional.jpg';
 
 const About = () => {
   return (
@@ -42,29 +39,38 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Leeshark</span>, a passionate full-stack developer based in [Location], dedicated to crafting clean, functional, and highly scalable web applications.
+            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Ajay Gopagoni</span>, an Artificial Intelligence and Machine Learning Engineer based in Hyderabad, India. I specialize in designing deep learning architectures, analyzing multi-modal data, and building secure, intelligent systems.
           </p>
 
-          {/* Horizontal Skills Row (Transparent & Large) */}
+          {/* Horizontal Skills Row (Original Brand Colors) */}
           <div className="flex items-center gap-10 mt-8">
-            <img 
-              data-aos="zoom-in" data-aos-delay="300"
-              src={reactImage} 
-              alt="React" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
-            />
-            <img 
-              data-aos="zoom-in" data-aos-delay="450"
-              src={nodeImage} 
-              alt="Node.js" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
-            />
-            <img 
-              data-aos="zoom-in" data-aos-delay="600"
-              src={mongoImage} 
-              alt="MongoDB" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
-            />
+            <div data-aos="zoom-in" data-aos-delay="300" title="Python">
+              <svg className="w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" viewBox="0 0 110 110">
+                {/* Top snake: Blue */}
+                <path d="M55 2.5C26 2.5 27.8 15 27.8 15L28 27.8H55.8V31.8H20C20 31.8 2.5 30.3 2.5 59C2.5 87.7 17.2 86.2 17.2 86.2H32.2V73.8C32.2 73.8 31 57.5 47.5 57.5H75C75 57.5 92.5 59.2 92.5 35C92.5 10.8 77.8 12.2 77.8 12.2L68 12.2V24.5C68 24.5 67 36.8 54 36.8C41 36.8 38.2 24.5 38.2 24.5V10.8C38.2 10.8 35.8 2.5 55 2.5Z" fill="#306998" />
+                <circle cx="43" cy="10" r="4" fill="#fff" />
+                {/* Bottom snake: Yellow */}
+                <path d="M55 107.5C84 107.5 82.2 95 82.2 95L82 82.2H54.2V78.2H90C90 78.2 107.5 79.7 107.5 51C107.5 22.3 92.8 23.8 92.8 23.8H77.8V36.2C77.8 36.2 79 52.5 62.5 52.5H35C35 52.5 17.5 50.8 17.5 75C17.5 99.2 32.2 97.8 32.2 97.8L42 97.8V85.5C42 85.5 43 73.2 56 73.2C69 73.2 71.8 85.5 71.8 85.5V99.2C71.8 99.2 74.2 107.5 55 107.5Z" fill="#FFD43B" />
+                <circle cx="67" cy="100" r="4" fill="#fff" />
+              </svg>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="450" title="TensorFlow">
+              <svg className="w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" viewBox="0 0 120 120" fill="none">
+                {/* Left Face */}
+                <path d="M60 10L15 35v50l45 25V60l-30-17V35l30 17V10z" fill="#FF6F00" />
+                {/* Right Face */}
+                <path d="M60 10l45 25v50L60 110V60l30-17V35l-30 17V10z" fill="#FFA000" />
+                {/* Top Face */}
+                <path d="M60 60L30 43l30-17 30 17-30 17z" fill="#FFD54F" />
+              </svg>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="600" title="SQL / Databases">
+              <svg className="w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" viewBox="0 0 100 100">
+                <ellipse cx="50" cy="25" rx="35" ry="12" fill="#336791" stroke="#ffffff" strokeWidth="4" />
+                <path d="M15 25v22c0 6.6 15.7 12 35 12s35-5.4 35-12V25" fill="#336791" stroke="#ffffff" strokeWidth="4" />
+                <path d="M15 47v22c0 6.6 15.7 12 35 12s35-5.4 35-12V47" fill="#2d5c82" stroke="#ffffff" strokeWidth="4" />
+              </svg>
+            </div>
           </div>
 
         </div>
